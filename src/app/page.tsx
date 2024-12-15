@@ -1,7 +1,11 @@
+import { Hero, MostRead } from "@/components"
+
 export default function Home() {
   return (
-    <div>
-      <h2> Homepage </h2>
+    <div className="w-full">
+      <Hero />
+      {/* most read posts */}
+      <MostRead />
     </div>
   );
 }
