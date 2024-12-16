@@ -1,3 +1,4 @@
 export { default as Header } from "./header/Header"
 export { default as Hero } from "./hero/Hero"
 export { default as MostRead } from "./posts/MostRead"
+export { default as LatestPosts } from "./posts/LatestPosts"

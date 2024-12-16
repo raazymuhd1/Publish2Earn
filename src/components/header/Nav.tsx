@@ -13,7 +13,11 @@ const Nav = () => {
             <div className="w-[2px] h-[20px] bg-[#000]" />
             <div className={`flex items-center gap-[20px]`}>
                { navLists.map(list => (
-                  <Link href={list.url} key={list.id}> { list.value } </Link>
+                  <Link
+                     className="font-semibold" 
+                     href={list.url} 
+                     key={list.id}> { list.value } 
+                  </Link>
                )) }
             </div>
         </aside>
