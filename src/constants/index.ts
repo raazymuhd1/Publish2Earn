@@ -1,5 +1,6 @@
 import solanaPict from "@/assets/images/solana-img.jpg";
 import EthPict from "@/assets/images/eth-img.jpg";
+import profilePict from "@/assets/images/profile-test.jpg";
 
 const navLists = [
     { id: 0, value: "Stories", url: "/stories" },
@@ -8,10 +9,10 @@ const navLists = [
 ]
 
 const dummyPosts = [
-    { id: 0, title: "What is NFTs ?", date: new Date(), author: "Izdihaar Ariiba", authorImg: "", contents: "", category: "Nfts", image: EthPict },
-    { id: 1, title: "What is Token in blockchain ??", date: new Date(), author: "John Doe", authorImg: "", contents: "", category: "Token", image: solanaPict },
-    { id: 2, title: "What is Oracle ?", date: new Date(), author: "", authorImg: "", contents: "", category: "", image: EthPict },
-    { id: 3, title: "How to bridge ?", date: new Date(), author: "Elene Kosh", authorImg: "", contents: "", category: "", image: solanaPict },
+    { id: 0, title: "What is NFTs ?", date: new Date(), author: "Izdihaar Ariiba", authorImg: profilePict, contents: "NFTs, or non-fungible tokens, are unique digital assets that represent ownership of a specific item, such as a piece of art, music, or even a collectible.", category: "Nfts", image: EthPict },
+    { id: 1, title: "What is Token in blockchain ??", date: new Date(), author: "John Doe", authorImg: profilePict, contents: "In blockchain, a token is a digital asset issued on a blockchain network. It can represent a variety of things, such as a currency, a utility, or even a security.", category: "Token", image: solanaPict },
+    { id: 2, title: "What is Oracle ?", date: new Date(), author: "", authorImg: profilePict, contents: "An oracle is a service that provides real-world data to smart contracts on a blockchain. This data can be used to trigger specific actions or decisions within the contract.", category: "", image: EthPict },
+    { id: 3, title: "How to bridge ?", date: new Date(), author: "Elene Kosh", authorImg: profilePict, contents: "Bridging in blockchain refers to the process of transferring assets or data between two different blockchain networks. This is often done through the use of specialized protocols or decentralized applications.", category: "", image: solanaPict },
 ]
 
 export { navLists, dummyPosts }
