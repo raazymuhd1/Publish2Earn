@@ -15,7 +15,8 @@ const Nav = () => {
         <aside className="flex items-center gap-[20px]"> 
             <Link
                href="/" 
-               className="font-extrabold text-main text-[16px] md:text-[20px] lg:text-[35px] global_text_shadow cursor-pointer"> Publish2Earn </Link>
+               className="font-extrabold text-extra text-[16px] md:text-[20px] lg:text-[35px] global_text_shadow cursor-pointer"> Publish2Earn 
+            </Link>
             <div className="w-[2px] h-[20px] bg-[#f2f2f2]" />
             <div className={`flex items-center gap-[20px]`}>
                { navLists.map(list => (

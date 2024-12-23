@@ -9,6 +9,7 @@
   
 .global_img_shadow {
     box-shadow: 2px 2px 2px 2px rgba(18, 17, 17, 0.75);
+    /* color: #fffef3; */
 }
 
 .global_text_shadow {

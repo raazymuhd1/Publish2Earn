@@ -13,9 +13,9 @@ export default {
   			main: "#b5d944",
         textMain: "#000000",
 			  secondary: "#dad5cf",
-        extra: "#c6c6c6",
+        extra: "#161616",
         // extra2: "#edff20",
-        extra2: "#fffef3",
+        extra2: "#CEE01B",
         line: "#000000"
   		}
   	}

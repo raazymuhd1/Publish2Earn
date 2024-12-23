@@ -7,6 +7,10 @@
  - `Signin` - login to their account before accessing other features
  - `Signup` - create an account tobe able to write and publish their post/content
 
+ ### System design
+ - user connect wallet or login -> user write post -> user profile -> see all posts -> read posts-> earn  rewards
+ - user not logged in -> see all posts -> read post -> no earning
+
 ### Tech Stack
  - `Nextjs`
  - `Typescript`
