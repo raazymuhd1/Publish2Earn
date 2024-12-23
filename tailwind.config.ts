@@ -10,10 +10,13 @@ export default {
   theme: {
   	extend: {
   		colors: {
-  			main: "#d6ff39",
-        textMain: "#f2f2f2",
+  			main: "#b5d944",
+        textMain: "#000000",
 			  secondary: "#dad5cf",
-        extra: "#141414"
+        extra: "#c6c6c6",
+        // extra2: "#edff20",
+        extra2: "#fffef3",
+        line: "#000000"
   		}
   	}
   },

@@ -2,7 +2,7 @@ import { Hero, MostRead, LatestPosts } from "@/components"
 
 export default function Home() {
   return (
-    <div className="w-full">
+    <div className="w-full  border-l-[1.5px] border-r-[2.5px] border-line p-[20px]">
       <Hero />
       {/* most read posts */}
       <MostRead />

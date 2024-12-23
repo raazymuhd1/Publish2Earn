@@ -1,22 +1,26 @@
-import React from 'react'
+"use client"
+import {useState} from 'react'
 import Link from "next/link"
 import Image from "next/image"
 import { navLists } from '@/constants'
 import { Bell, SquarePen } from "lucide-react"
+import { Button } from '../ui/button'
 import profileTest from "@/assets/images/profile-test.jpg"
 
 const Nav = () => {
+     const [loggedIn, setLoggedIn] = useState<boolean>(true)
+
   return (
-    <nav className="w-[90%] flex justify-between text-[#f2f2f2] items-center mx-auto h-full">
+    <nav className="w-[90%] flex justify-between text-textMain items-center mx-auto h-full">
         <aside className="flex items-center gap-[20px]"> 
             <Link
                href="/" 
-               className="text-main font-bold text-[16px] md:text-[20px] lg:text-[1rem+1rem] cursor-pointer"> Publish2Earn </Link>
+               className="font-extrabold text-main text-[16px] md:text-[20px] lg:text-[35px] global_text_shadow cursor-pointer"> Publish2Earn </Link>
             <div className="w-[2px] h-[20px] bg-[#f2f2f2]" />
             <div className={`flex items-center gap-[20px]`}>
                { navLists.map(list => (
                   <Link
-                     className="font-semibold" 
+                     className="font-bold" 
                      href={list.url} 
                      key={list.id}> { list.value } 
                   </Link>
@@ -26,14 +30,15 @@ const Nav = () => {
 
         {/* right side of navbar */}
         <aside className="flex items-center gap-[20px]">
-           <Link href="/write" className="flex items-center gap-[10px] cursor-pointer">
-             <SquarePen className="text-[18px]" />
-             <h3> Write </h3>
+           <Link href="/write" className={`flex items-center gap-[10px] ${loggedIn ? "inline" : "hidden"} cursor-pointer`}>
+             <SquarePen className="text-[18px] font-bold" />
+             <h3 className="font-bold"> Write </h3>
            </Link>
-           <Bell className="text-[18px]" />
-           <Link href="/profile" className="cursor-pointer">
-              <Image src={profileTest} className="w-[40px] h-[40px] rounded-[50%]" alt="profile" />
+           <Bell className={`text-[18px] font-bold ${loggedIn ? "inline" : "hidden"} `} />
+           <Link href="/profile" className={`cursor-pointer ${loggedIn ? "inline" : "hidden"} `}>
+              <Image src={profileTest} className="w-[40px] h-[40px] rounded-[50%]  global_img_shadow" alt="profile" />
            </Link>
+           <Button className={`bg-main border-[2.5px] border-line h-[50px] global_shadow font-bold text-textMain w-[fit-content] ${loggedIn ? "hidden" : "inline"} hover:text-secondary text-[16px] md:text-[18px]`}> Connect Wallet </Button>
         </aside>
     </nav>
   )
