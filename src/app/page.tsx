@@ -7,6 +7,8 @@ export default function Home() {
       {/* most read posts */}
       <MostRead />
       <LatestPosts />
+      {/* story could be place it here */}
+      {/* must read */}
     </div>
   );
 }

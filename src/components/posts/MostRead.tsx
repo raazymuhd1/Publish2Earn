@@ -8,23 +8,23 @@ const MostRead = () => {
     <div className="w-full flex items-center gap-[10px] min-h-[200px] mt-[30px]">
         <Image src={testPost} alt="post" className="rounded-[10px] w-[50%]" />
         {/* post detail */}
-        <aside className="p-[15px] flex flex-col gap-[25px]">
-            <article className="flex items-center gap-[15px]">
+        <aside className="p-[15px] flex flex-col gap-[25px] text-textMain">
+            <article className="flex items-center gap-[15px] text-secondary">
                 <div className="flex items-center gap-[10px]"> 
                     <Image src={profileTest} alt="profile-small" className="w-[30px] h-[30px] rounded-[50%]" />
-                    <h4> 0xOpBytes </h4>
+                    <h4 className="font-semibold text-main"> 0xOpBytes </h4>
                 </div>
-                <div className="w-[4px] bg-[#000] h-[4px] rounded-[50%]" />
-                <p> 12 minutes ago </p>
+                <div className="w-[4px] bg-textMain h-[4px] rounded-[50%]" />
+                <p className="font-light text-[14px]"> 12 minutes ago </p>
             </article>
             <article className="flex flex-col gap-[10px]">
                   <h2 className="text-[18px] md:text-[25px] lg:text-[35px] font-bold"> What is web3 ? </h2>
                   <p> Web3 refers to the next generation of the internet, where decentralized technologies like blockchain and cryptocurrencies enable users to have more control over their data and interactions. It aims to create a more transparent, secure, and democratic online environment. </p>
               </article>
               <div className="flex items-center gap-[15px]">
-                 <h4> Web3 </h4>
-                 <div className="w-[4px] bg-[#000] h-[4px] rounded-[50%]" />
-                 <p> 4 mins read </p>
+                 <h4 className="font-semibold text-main"> Web3 </h4>
+                 <div className="w-[4px] bg-textMain h-[4px] rounded-[50%]" />
+                 <p className="font-light text-[14px]"> 4 mins read </p>
               </div>
         </aside>
     </div>
