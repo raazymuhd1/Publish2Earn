@@ -1,4 +1,4 @@
-import { Hero, MostRead, LatestPosts } from "@/components"
+import { Hero, MostRead, LatestPosts, MustRead } from "@/components"
 
 export default function Home() {
   return (
@@ -9,6 +9,7 @@ export default function Home() {
       <LatestPosts />
       {/* story could be place it here */}
       {/* must read */}
+      <MustRead />
     </div>
   );
 }

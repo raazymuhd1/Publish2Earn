@@ -2,23 +2,17 @@ import React from 'react'
 import { ChevronRight } from "lucide-react"
 import { dummyPosts } from "@/constants"
 import Image from "next/image"
-import Link from "next/link"
+import Title from "./Title"
 
 const LatestPosts = () => {
   return (
     <div className="w-full mt-[25px]">
-        <div className="flex items-center justify-between">
-            <h2 className="font-bold text-textMain lg:text-[25px] md:text-[20px] text-[18px]"> Latest Posts </h2>
-            <Link href="/posts" className="flex items-center gap-[10px]">
-                <h4 className="text-[16px] md:text-[20px] text-main font-bold"> See All </h4>
-                <ChevronRight className="text-main" />
-            </Link>
-        </div>
+       <Title title="Latest Posts" />
 
         <article className="flex flex-wrap items-center gap-[20px] mt-[20px]">
             { dummyPosts.map(post => (
               <div key={post.id} 
-                className="min-h-[300px] max-h-[fit-content] global_shadow border-[3px] border-line flex flex-col gap-[10px] min-w-[250px] max-w-[400px] p-[10px] cursor-pointer text-secondary bg-extra">
+                className="min-h-[300px] max-h-[fit-content] global_shadow border-[3px] border-line flex flex-col gap-[10px] min-w-[250px] max-w-[400px] p-[10px] cursor-pointer text-secondary bg-extra hover:scale-[1.2] transition-[transform_1s]">
                  <Image src={post.image} alt="image-post" className="w-full h-[200px] object-cover rounded-[15px]" />
                  <div className="flex items-center gap-[10px]">
                     <Image src={post.authorImg} alt="author-iimg" className="w-[40px] h-[40px] rounded-[50%]  hover:scale-[1.1] transition-all duration-[1s]" />

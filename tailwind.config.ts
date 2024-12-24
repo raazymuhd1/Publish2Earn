@@ -16,6 +16,7 @@ export default {
         extra: "#161616",
         // extra2: "#edff20",
         extra2: "#CEE01B",
+        extra3: "#4e24c6",
         line: "#000000"
   		}
   	}
