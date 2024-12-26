@@ -9,7 +9,7 @@ const LatestPosts = () => {
     <div className="w-full mt-[25px]">
        <Title title="Latest Posts" />
 
-        <article className="flex flex-wrap items-center gap-[20px] mt-[20px]">
+        <article className="flex flex-wrap items-center lg:justify-left justify-center gap-[20px] mt-[20px]">
             { dummyPosts.map(post => (
               <div key={post.id} 
                 className="min-h-[300px] max-h-[fit-content] global_shadow border-[3px] border-line flex flex-col gap-[10px] min-w-[250px] max-w-[400px] p-[10px] cursor-pointer text-secondary bg-extra hover:scale-[1.2] transition-[transform_1s]">
