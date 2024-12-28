@@ -1,4 +1,4 @@
-import { Hero, MostRead, LatestPosts, MustRead } from "@/components"
+import { Hero, MostRead, LatestPosts, MustRead, EditorsPick } from "@/components"
 
 export default function Home() {
   return (
@@ -10,6 +10,7 @@ export default function Home() {
       {/* story could be place it here */}
       {/* must read */}
       <MustRead />
+      <EditorsPick />
     </div>
   );
 }
