@@ -14,7 +14,7 @@ interface Props {
 
 const PostInfo: FC<Props> = ({ authorName, authorPic, postDate, title, description, customStyle, textStyle }) => {
   return (
-    <div className={`lex flex-col gap-[10px] ${ customStyle && "translate-x-[20px] translate-y-[-250px]"}`}>
+    <div className={`lex flex-col gap-[10px] ${ customStyle && "translate-x-[20px] translate-y-[-250px]"} rounded-[15px]`}>
         <div className="flex items-center gap-[10px]">
             <Image src={authorPic} alt="author-img" className="w-[40px] h-[40px] rounded-[50%]  hover:scale-[1.1] transition-all duration-[1s]" />
              <h4 className={`font-semibold text-extra3 text-[14px] md:text-[16px] lg:text-[18px] ${textStyle}`}> {authorName} </h4>
