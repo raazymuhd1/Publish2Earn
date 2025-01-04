@@ -12,7 +12,7 @@ const MostRead = () => {
             <article className="flex items-center gap-[15px] text-secondary">
                 <div className="flex items-center gap-[10px]"> 
                     <Image src={profileTest} alt="profile-small" className="w-[30px] h-[30px] rounded-[50%]" />
-                    <h4 className="font-semibold text-main"> 0xOpBytes </h4>
+                    <h4 className="font-semibold text-extra3"> 0xOpBytes </h4>
                 </div>
                 <div className="w-[4px] bg-textMain h-[4px] rounded-[50%]" />
                 <p className="font-light text-[14px]"> 12 minutes ago </p>

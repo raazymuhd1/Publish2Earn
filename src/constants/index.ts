@@ -1,6 +1,7 @@
 import solanaPict from "@/assets/images/solana-img.jpg";
 import EthPict from "@/assets/images/eth-img.jpg";
 import profilePict from "@/assets/images/profile-test.jpg";
+import guerilla from "@/assets/images/guerrillabuzz.jpg"
 
 const navLists = [
     { id: 0, value: "Stories", url: "/stories" },
@@ -24,4 +25,10 @@ const dummyMustRead = [
     { id: 1, title: "How does Web3 impact the future ?", date: new Date(), author: "Samantha Lee", authorImg: profilePict, contents: "Web3 has the potential to revolutionize various industries, including finance, healthcare, and social media, by providing a decentralized and transparent framework for interactions and transactions.", category: "Web3", image: solanaPict },
 ]
 
-export { navLists, dummyPosts, dummyMustRead }
+const dummyEditorsPick = [
+     { id: 0, title: "What is Web3 ?", date: new Date(), author: "Alex Chen", authorImg: profilePict, contents: "Web3 refers to the next generation of the internet, where decentralized technologies like blockchain and cryptocurrencies enable users to have more control over their data and interactions.", category: "Web3", image: EthPict },
+    { id: 1, title: "How does Web3 impact the future ?", date: new Date(), author: "Samantha Lee", authorImg: profilePict, contents: "Web3 has the potential to revolutionize various industries, including finance, healthcare, and social media, by providing a decentralized and transparent framework for interactions and transactions.", category: "Web3", image: solanaPict },
+    { id: 2, title: "How does Web3 impact the future ?", date: new Date(), author: "Samantha Lee", authorImg: profilePict, contents: "Web3 has the potential to revolutionize various industries, including finance, healthcare, and social media, by providing a decentralized and transparent framework for interactions and transactions.", category: "Web3", image: guerilla },
+]
+
+export { navLists, dummyPosts, dummyMustRead, dummyEditorsPick }
