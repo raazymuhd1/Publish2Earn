@@ -9,9 +9,9 @@ const EditorsPick = () => {
     <section className='mt-[40px]'>
         <Title title="Editor's Pick" />
 
-        <article className="min-h-[450px] flex flex-col gap-[15px]">
-            <div className="w-full h-[50%]">
-               <Image src={guerilla} alt="img" className="w-full" />
+        <article className="h-[550px] flex flex-col gap-[15px]">
+            <div className="w-full h-[40%]">
+               <Image src={guerilla} alt="img" className="w-full h-full object-cover" />
             </div>
 
             <div className="flex items-center gap-[20px]">
@@ -19,6 +19,9 @@ const EditorsPick = () => {
                  <aside 
                   key={editor.id} className="">
                       <Image src={editor.image} alt="img" className="" />
+                      <div className=""> 
+                         
+                      </div>
                  </aside>
               )) }
             </div>
