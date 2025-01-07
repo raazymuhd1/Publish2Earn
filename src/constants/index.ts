@@ -31,4 +31,14 @@ const dummyEditorsPick = [
     { id: 2, title: "How does Web3 impact the future ?", date: new Date(), author: "Samantha Lee", authorImg: profilePict, contents: "Web3 has the potential to revolutionize various industries, including finance, healthcare, and social media, by providing a decentralized and transparent framework for interactions and transactions.", category: "Web3", image: guerilla },
 ]
 
-export { navLists, dummyPosts, dummyMustRead, dummyEditorsPick }
+const postTags = [
+    { id: 0, tag: "All", isSelected: false },
+    { id: 1, tag: "Defi", isSelected: false },
+    { id: 2, tag: "Dex", isSelected: false },
+    { id: 3, tag: "Blockchain", isSelected: false },
+    { id: 4, tag: "Web3", isSelected: false },
+    { id: 5, tag: "Rwa", isSelected: false },
+    { id: 6, tag: "Cryptocurrency", isSelected: false },
+]
+
+export { navLists, postTags, dummyPosts, dummyMustRead, dummyEditorsPick }
