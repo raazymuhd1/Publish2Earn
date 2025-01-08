@@ -1,6 +1,7 @@
 import React from 'react'
 import { Search } from 'lucide-react'
 import PostTags from './PostTags'
+import Posts from "./Posts"
 import { postTags } from '@/constants'
 
 const optItem = "p-[10px] bg-textMain text-secondary rounded-[8px] hover:bg-extra2"
@@ -42,6 +43,8 @@ const AllPosts = () => {
                     <PostTags { ...tags } />
                 )) }
             </aside>
+
+            <Posts />
         </article>
 
     </section>

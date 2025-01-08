@@ -4,15 +4,14 @@ import { dummyPosts } from "@/constants"
 import Image from "next/image"
 import Title from "./Title"
 
-const LatestPosts = () => {
+const Posts = () => {
   return (
-    <div className="w-full mt-[25px]">
-       <Title title="Latest Posts" />
+    <div className="w-full mt-[35px]">
 
-        <article className="flex flex-wrap items-center lg:justify-left justify-center gap-[20px] mt-[20px]">
+        <article className="flex flex-wrap items-center lg:justify-start justify-center gap-[20px] mt-[20px]">
             { dummyPosts.map(post => (
               <div key={post.id} 
-                className="min-h-[200px] max-h-[fit-content] global_shadow border-[3px] border-line flex flex-col gap-[10px] min-w-[250px] max-w-[300px] p-[10px] cursor-pointer text-secondary bg-extra hover:scale-[1.1] transition-[transform] duration-500 rounded-[15px]">
+                className="min-h-[200px] max-h-[fit-content] global_shadow border-[3px] border-line flex flex-col gap-[10px] min-w-[250px] max-w-[350px] p-[10px] cursor-pointer text-secondary bg-extra hover:scale-[1.1] transition-[transform] duration-500 rounded-[15px]">
                  <Image src={post.image} alt="image-post" className="w-full h-[20%] object-cover rounded-[15px]" />
                  <div className="flex items-center gap-[10px]">
                     <Image src={post.authorImg} alt="author-img" className="w-[40px] h-[40px] rounded-[50%]  hover:scale-[1.1] transition-all duration-[1s]" />
@@ -32,4 +31,4 @@ const LatestPosts = () => {
   )
 }
 
-export default LatestPosts
+export default Posts
