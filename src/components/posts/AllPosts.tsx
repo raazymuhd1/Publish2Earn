@@ -17,7 +17,7 @@ const AllPosts = () => {
                     <input 
                         placeholder="Search for posts" 
                         type="text" 
-                        className='border-none outline-none w-[95%] h-full py-[8px] px-[10px] bg-transparent'
+                        className='border-none outline-none w-[95%] h-full py-[8px] px-[10px] low_opacity_bg text-[#fff]'
                     />
                     <Search className="text-[16px] md:text-[20px] lg:text-[25px] placeholder:text-[#ffffff]" />
                 </div>
@@ -27,7 +27,7 @@ const AllPosts = () => {
                 <h4 className="font-bold text-[16px] md:text-[20px] lg:text-[25px]" > Sort By</h4>
                 <select 
                     value="Sort By" 
-                    className="bg-transparent w-full h-[60px] border-[2.5px] border-line rounded-[8px] px-[10px] cursos-pointer">
+                    className="low_opacity_bg w-full h-[60px] border-[2.5px] border-line rounded-[8px] px-[10px] cursos-pointer text-[#fff]">
                     <option className={`${optItem}`}>Asc</option>
                     <option className={`${optItem}`}>Desc</option>
                     <option className={`${optItem}`}>Latest</option>

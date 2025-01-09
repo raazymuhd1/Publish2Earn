@@ -14,5 +14,18 @@
 
 .global_text_shadow {
   text-shadow: 5px 1px rgba(18, 17, 17, 0.75);
+}
 
+/* opacity reduced bg */
+.low_opacity_bg {
+  backdrop-filter: blur(10px) ;
+  -webkit-backdrop-filter: blur(10px) ;
+  background-color: rgba(32, 32, 30, 0.5); 
+}
+
+
+/* profile page */
+.profile_banner {
+    background-image: url("../assets/images/profile-banner.jpg");
+    background-size: cover;
 }

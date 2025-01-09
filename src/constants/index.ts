@@ -41,4 +41,12 @@ const postTags = [
     { id: 6, tag: "Cryptocurrency", isSelected: false },
 ]
 
-export { navLists, postTags, dummyPosts, dummyMustRead, dummyEditorsPick }
+const relatedContents = [
+    { id: 0, title: "How to frontrun ?", tag: "Defi" },
+    { id: 1, title: "How to frontrun ?", tag: "Defi" },
+    { id: 2, title: "How to frontrun ?", tag: "Defi" },
+    { id: 3, title: "How to frontrun ?", tag: "Defi" },
+    { id: 4, title: "How to frontrun ?", tag: "Defi" },
+]
+
+export { navLists, postTags, relatedContents, dummyPosts, dummyMustRead, dummyEditorsPick }

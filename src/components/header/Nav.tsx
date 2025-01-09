@@ -8,7 +8,7 @@ import { Button } from '../ui/button'
 import profileTest from "@/assets/images/profile-test.jpg"
 
 const Nav = () => {
-     const [loggedIn, setLoggedIn] = useState<boolean>(false)
+     const [loggedIn, setLoggedIn] = useState<boolean>(true)
 
   return (
     <nav className="w-[90%] flex justify-between text-textMain items-center mx-auto h-full">
