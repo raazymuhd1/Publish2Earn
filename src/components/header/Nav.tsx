@@ -8,7 +8,7 @@ import { Button } from '../ui/button'
 import profileTest from "@/assets/images/profile-test.jpg"
 
 const Nav = () => {
-     const [loggedIn, setLoggedIn] = useState<boolean>(true)
+     const [loggedIn, setLoggedIn] = useState<boolean>(false)
 
   return (
     <nav className="w-[90%] flex justify-between text-textMain items-center mx-auto h-full">
@@ -39,7 +39,8 @@ const Nav = () => {
            <Link href="/profile" className={`cursor-pointer ${loggedIn ? "inline" : "hidden"} `}>
               <Image src={profileTest} className="w-[40px] h-[40px] rounded-[50%]  global_img_shadow" alt="profile" />
            </Link>
-           <Button className={`bg-main border-[2.5px] border-line h-[50px] global_shadow font-bold text-textMain w-[fit-content] ${loggedIn ? "hidden" : "inline"} hover:text-secondary text-[16px] md:text-[18px]`}> Connect Wallet </Button>
+           <Link href="/signin" className={`bg-main border-[2.5px] border-line h-[50px] global_shadow font-bold text-textMain min-w-[150px] ${loggedIn ? "hidden" : "inline"} hover:text-secondary hover:bg-line text-[16px] md:text-[18px] p-[10px] text-center`}> Sign In 
+           </Link>
         </aside>
     </nav>
   )

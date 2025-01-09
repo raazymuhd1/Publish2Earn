@@ -10,18 +10,19 @@ const AllPosts = () => {
   return (
     <section className="mt-[80px] w-full">
         
-        <header className="flex w-full items-center gap-[25px] justify-between">
+        <header className="flex w-full items-end gap-[25px] justify-between">
             <aside className="flex flex-col w-[85%] gap-[10px]">
                 <h4 className="font-bold text-[18px] md:text-[25px] lg:text-[35px]"> Search posts </h4>
                 <div className="flex h-[60px] items-center w-full gap-[10px] border-[2.5px] border-line rounded-[8px]">
                     <input 
                         placeholder="Search for posts" 
                         type="text" 
-                        className='border-none outline-none w-[90%] h-full py-[8px] px-[10px] bg-transparent'
+                        className='border-none outline-none w-[95%] h-full py-[8px] px-[10px] bg-transparent'
                     />
                     <Search className="text-[16px] md:text-[20px] lg:text-[25px] placeholder:text-[#ffffff]" />
                 </div>
             </aside>
+
             <aside className="flex w-[15%] flex-col gap-[10px]">
                 <h4 className="font-bold text-[16px] md:text-[20px] lg:text-[25px]" > Sort By</h4>
                 <select 
@@ -37,10 +38,10 @@ const AllPosts = () => {
         <h5 className="mt-[30px] font-normal"> result for <strong> #Ethereum </strong> found <strong> 100 </strong> </h5>
 
         <article className="mt-[40px]">
-            <h4 className="font-bold text-[16px] md:text-[20px] lg:text-[25px]"> Post Tags </h4>
+            <h4 className="font-bold text-[16px] md:text-[20px] lg:text-[25px]"> Post Tags: </h4>
             <aside className="flex items-center gap-[15px] flex-wrap mt-[20px]">
                 { postTags.map(tags => (
-                    <PostTags { ...tags } />
+                    <PostTags key={tags.id} { ...tags } />
                 )) }
             </aside>
 
