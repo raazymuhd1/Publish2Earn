@@ -49,4 +49,11 @@ const relatedContents = [
     { id: 4, title: "How to frontrun ?", tag: "Defi" },
 ]
 
-export { navLists, postTags, relatedContents, dummyPosts, dummyMustRead, dummyEditorsPick }
+// dummy tabs on profile page
+const profileTabs = [
+    { id: 0, title: "Posts", isActive: false },
+    { id: 1, title: "Rewards", isActive: false },
+    { id: 2, title: "Edit Profile", isActive: false },
+]
+
+export { navLists, postTags, relatedContents, dummyPosts, dummyMustRead, dummyEditorsPick, profileTabs }
