@@ -23,9 +23,10 @@ const Profile = () => {
         </div>
 
         {/* make 3 tabs below here (posts, rewards, edit profile) */}
-        <div className="w-[90%] mx-auto mt-[30px] flex flex-col gap-[40px]">
+        <div className="w-[90%] mx-auto mt-[30px] flex items-center justify-center gap-[60px]">
              { profileTabs.map(profile => (
-                <div className="cursor-pointer hover:bg-extra3" key={profile.id}>
+                <div 
+                  className="cursor-pointer hover:bg-extra3 hover:text-[#fff] p-[10px] rounded-[8px]" key={profile.id}>
                   <h4 className="font-semibold"> { profile.title } </h4>
                 </div>
              )) }
