@@ -11,7 +11,7 @@ const PostTags: FC<Props> = ({id, tag, isSelected}) => {
         const [isActive, setIsActive] = useState<boolean>(false)
 
   return (
-    <div key={id} className="rounded-[8px] low_opacity_bg min-w-[150px] hover:bg-extra3 p-[10px] border-[2px] border-line cursor-pointer duration-500 transition-all">
+    <div key={id} className="rounded-[8px] bg-extra min-w-[150px] hover:bg-extra3 p-[10px] border-[2px] border-line cursor-pointer duration-500 transition-all">
         <p className="text-center text-[#ffffff] uppercase"> #{tag} </p>
     </div>
   )
