@@ -1,11 +1,40 @@
 "use client"
-import { useState } from 'react'
+import { useState, useReducer } from 'react'
 import Image from "next/image"
 import profile from "@/assets/images/profile-test.jpg"
 import { profileTabs } from "@/constants"
 
+interface Tabs {
+  id: number;
+  title: string;
+  isActive: boolean;
+}
+
+function tabsReducer(state, action) {
+    
+     switch (action.type) {
+          case "setActiveTabs": 
+            console.log(`state size are ${state}`)
+            break;
+          default: 
+            console.log(state)  
+            break;
+     }
+}
+
 const Profile = () => {
-      const [isActive, setIsActive] = useState<boolean>(false)
+      const [tabs, setTabs] = useState(profileTabs)
+      const [state, dispatch] = useReducer(tabsReducer, profileTabs)
+
+
+    function handleTabsSelection(idx: number) {
+        console.log(idx);
+        // setTabs(tab => {
+        //    return [...tab, {...tab[idx], isActive: true} ]
+        //   })
+        //   console.log(tabs[0])
+       dispatch({ type: "setActiveTabs" })
+    }
 
   return (
     <section className="w-full">
@@ -23,13 +52,21 @@ const Profile = () => {
         </div>
 
         {/* make 3 tabs below here (posts, rewards, edit profile) */}
-        <div className="w-[90%] mx-auto mt-[30px] flex items-center justify-center gap-[60px]">
-             { profileTabs.map(profile => (
+        <div className="w-[90%] mx-auto mt-[-20px] border-t-[1.5px] border-line bg-extra rounded-[10px] min-h-[300px] p-[20px]">
+
+           <div className="w-full flex items-center justify-center gap-[60px]">
+             { tabs.length > 0 && tabs.map((tab, idx) => (
                 <div 
-                  className="cursor-pointer hover:bg-extra3 hover:text-[#fff] p-[10px] rounded-[8px]" key={profile.id}>
-                  <h4 className="font-semibold"> { profile.title } </h4>
+                  onClick={() => handleTabsSelection(idx)}
+                  className={`cursor-pointer bg-extra2 hover:bg-extra3 hover:text-[#fff] p-[10px] ${tab.isActive && "bg-[red]"} rounded-[8px]`} key={tab.id}>
+                  <h4 className="font-semibold"> { tab.title } </h4>
                 </div>
              )) }
+           </div>
+
+           <div className="mt-[40px] w-full h-[fit-content]">
+             <h4 className="text-[#fff] font-semibold md:text-[18px] text-center text-[16px]"> No post yet </h4>
+           </div>
         </div>
     </section>
   )

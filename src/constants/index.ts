@@ -51,9 +51,8 @@ const relatedContents = [
 
 // dummy tabs on profile page
 const profileTabs = [
-    { id: 0, title: "Posts", isActive: false },
-    { id: 1, title: "Rewards", isActive: false },
-    { id: 2, title: "Settings", isActive: false },
+    { id: 0, title: "My Posts", isActive: false },
+    { id: 1, title: "Liked Posts", isActive: false },
 ]
 
 export { navLists, postTags, relatedContents, dummyPosts, dummyMustRead, dummyEditorsPick, profileTabs }
