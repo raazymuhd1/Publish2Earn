@@ -39,8 +39,8 @@ const Nav = () => {
              <h3 className="font-bold"> Write </h3>
            </Link>
            <Bell className={`text-[18px] font-bold ${loggedIn ? "inline" : "hidden"} `} />
-           <div className="flex flex-col gap-[15px]">
-               <Image src={profileTest} className="w-[40px] h-[40px] rounded-[50%] global_img_shadow" alt="profile" />
+           <div className="flex min-h-[150px] flex-col gap-[15px]">
+               <Image src={profileTest} className="w-[40px] h-[40px] rounded-[50%] cursor-pointer global_img_shadow bg-[red]" alt="profile" />
                <aside className="w-[200px] h-[200px] bg-[#fff] p-[10px] translate-y-[130px]"> 
                   
                </aside>
