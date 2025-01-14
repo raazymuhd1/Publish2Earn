@@ -7,6 +7,9 @@ import { Bell, SquarePen } from "lucide-react"
 import { Button } from '../ui/button'
 import profileTest from "@/assets/images/profile-test.jpg"
 
+// display these menu when user click on their profile picture
+const userDetailsTabs = ["Profile", "Rewards", "Settings"]
+
 const Nav = () => {
      const [loggedIn, setLoggedIn] = useState<boolean>(true)
 
@@ -36,9 +39,12 @@ const Nav = () => {
              <h3 className="font-bold"> Write </h3>
            </Link>
            <Bell className={`text-[18px] font-bold ${loggedIn ? "inline" : "hidden"} `} />
-           <Link href="/profile" className={`cursor-pointer ${loggedIn ? "inline" : "hidden"} `}>
-              <Image src={profileTest} className="w-[40px] h-[40px] rounded-[50%]  global_img_shadow" alt="profile" />
-           </Link>
+           <div className="flex flex-col gap-[15px]">
+               <Image src={profileTest} className="w-[40px] h-[40px] rounded-[50%] global_img_shadow" alt="profile" />
+               <aside className="w-[200px] h-[200px] bg-[#fff] p-[10px] translate-y-[130px]"> 
+                  
+               </aside>
+            </div>
            <Link href="/signin" className={`bg-main border-[2.5px] border-line h-[50px] global_shadow font-bold text-textMain min-w-[150px] ${loggedIn ? "hidden" : "inline"} hover:text-secondary hover:bg-line text-[16px] md:text-[18px] p-[10px] text-center`}> Sign In 
            </Link>
         </aside>
