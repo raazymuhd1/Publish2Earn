@@ -11,4 +11,6 @@ export { default as Detail } from "./posts/Detail"
 export { default as ClaimButton } from "./custom-buttons/ClaimButton"
 // user details
 export { default as Profile } from "./userProfile/Profile"
+export { default as Rewards } from "./userProfile/Rewards"
+// footer
 export { default as Footer } from "./footer/Footer"
