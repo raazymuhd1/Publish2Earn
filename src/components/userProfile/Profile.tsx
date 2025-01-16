@@ -54,11 +54,11 @@ const Profile = () => {
         {/* make 3 tabs below here (posts, rewards, edit profile) */}
         <div className="w-[90%] mx-auto mt-[-20px] border-t-[1.5px] border-line bg-extra rounded-[10px] min-h-[300px] p-[20px]">
 
-           <div className="w-full flex items-center justify-center gap-[60px]">
+           <div className="w-full flex items-center justify-center gap-[30px] mt-[30px]">
              { tabs.length > 0 && tabs.map((tab, idx) => (
                 <div 
                   onClick={() => handleTabsSelection(idx)}
-                  className={`cursor-pointer bg-extra2 hover:bg-extra3 hover:text-[#fff] p-[10px] ${tab.isActive && "bg-[red]"} rounded-[8px]`} key={tab.id}>
+                  className={`cursor-pointer bg-main hover:bg-extra3 hover:text-[#fff] p-[10px] ${tab.isActive && "bg-[red]"} rounded-[8px]`} key={tab.id}>
                   <h4 className="font-semibold"> { tab.title } </h4>
                 </div>
              )) }
