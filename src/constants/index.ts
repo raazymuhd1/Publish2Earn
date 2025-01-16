@@ -1,7 +1,9 @@
+// dummies images
 import solanaPict from "@/assets/images/solana-img.jpg";
 import EthPict from "@/assets/images/eth-img.jpg";
 import profilePict from "@/assets/images/profile-test.jpg";
 import guerilla from "@/assets/images/guerrillabuzz.jpg"
+import { Tabs } from "@/types"
 
 const navLists = [
     { id: 0, value: "Stories", url: "/stories" },
@@ -63,13 +65,18 @@ const relatedContents = [
 ]
 
 // dummy tabs on profile page
-const profileTabs = [
+const profileTabs: Tabs[] = [
     { id: 0, title: "My Posts", isActive: false },
     { id: 1, title: "Liked Posts", isActive: false },
+]
+
+const footerMenuList = [
+  { id: 0, title: "Creators", url: "/creators" },
+  { id: 1, title: "Write", url: "/write" },
 ]
 
 export { 
     navLists, postTags, relatedContents, 
     dummyPosts, dummyMustRead, dummyEditorsPick, 
-    profileTabs,userDetailTabs, rewards 
+    profileTabs,userDetailTabs, rewards, footerMenuList
 }

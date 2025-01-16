@@ -3,14 +3,10 @@ import { useState, useReducer } from 'react'
 import Image from "next/image"
 import profile from "@/assets/images/profile-test.jpg"
 import { profileTabs } from "@/constants"
+import { Tabs } from "@/types"
 
-interface Tabs {
-  id: number;
-  title: string;
-  isActive: boolean;
-}
 
-function tabsReducer(state, action) {
+function tabsReducer(state: Tabs[], action) {
     
      switch (action.type) {
           case "setActiveTabs": 

@@ -37,7 +37,7 @@ const AllPosts = () => {
 
         <h5 className="mt-[30px] font-normal"> result for <strong> #Ethereum </strong> found <strong> 100 </strong> </h5>
 
-        <article className="mt-[40px]">
+        <article className="mt-[40px] p-[30px]">
             <h4 className="font-bold text-[16px] md:text-[20px] lg:text-[25px]"> Post Tags: </h4>
             <aside className="flex items-center gap-[15px] flex-wrap mt-[20px]">
                 { postTags.map(tags => (
