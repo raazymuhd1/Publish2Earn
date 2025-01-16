@@ -6,9 +6,8 @@ import guerilla from "@/assets/images/guerrillabuzz.jpg"
 import { Tabs } from "@/types"
 
 const navLists = [
-    { id: 0, value: "Stories", url: "/stories" },
-    { id: 1, value: "Creators", url: "/creators" },
-    { id: 2, value: "Community", url: "/community" },
+    { id: 1, value: "Top Creators", url: "/creators" },
+    { id: 2, value: "Earn Points", url: "/earn" },
 ]
 
 const userDetailTabs = [
@@ -69,6 +68,7 @@ const profileTabs: Tabs[] = [
     { id: 0, title: "My Posts", isActive: false },
     { id: 1, title: "Liked Posts", isActive: false },
 ]
+
 
 const footerMenuList = [
   { id: 0, title: "Creators", url: "/creators" },

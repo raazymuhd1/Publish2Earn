@@ -12,7 +12,7 @@ const Footer = () => {
           <aside className="flex items-center gap-[20px]">
               { footerMenuList.map(menu => (
                 <Link
-                  className="font-medium text-[16px] md:text-[18px] text-main lowercase" 
+                  className="font-normal text-[16px] md:text-[18px] text-main lowercase underline" 
                   href={menu.url} key={menu.id}> {menu.title} </Link>
               )) 
               }

@@ -29,3 +29,22 @@
     background-image: url("../assets/images/profile-banner.jpg");
     background-size: cover;
 }
+
+/* settings page */
+@layer base {
+   .label {
+    @apply text-main font-semibold;
+   }
+
+   .input-container {
+      @apply flex w-full items-center gap-[20px] mt-[10px];
+   }
+
+   .input-field {
+      @apply w-full text-[#fff] focus:border-main;
+   }
+
+   .input-edit {
+      @apply text-main cursor-pointer;
+   }
+}
