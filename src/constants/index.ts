@@ -9,6 +9,12 @@ const navLists = [
     { id: 2, value: "Community", url: "/community" },
 ]
 
+const userDetailTabs = [
+    { id: 0, title: "Profile", url: "/profile" },
+    { id: 1, title: "Settings", url: "/settings" },
+    { id: 2, title: "Rewards", url: "/rewards" },
+]
+
 const dummyPosts = [
     { id: 0, title: "What is NFTs ?", date: new Date(), author: "Izdihaar Ariiba", authorImg: profilePict, contents: "NFTs, or non-fungible tokens, are unique digital assets that represent ownership of a specific item, such as a piece of art, music, or even a collectible.", category: "Nfts", image: EthPict },
     { id: 1, title: "What is Token in blockchain ??", date: new Date(), author: "John Doe", authorImg: profilePict, contents: "In blockchain, a token is a digital asset issued on a blockchain network. It can represent a variety of things, such as a currency, a utility, or even a security.", category: "Token", image: solanaPict },
@@ -55,4 +61,4 @@ const profileTabs = [
     { id: 1, title: "Liked Posts", isActive: false },
 ]
 
-export { navLists, postTags, relatedContents, dummyPosts, dummyMustRead, dummyEditorsPick, profileTabs }
+export { navLists, postTags, relatedContents, dummyPosts, dummyMustRead, dummyEditorsPick, profileTabs,userDetailTabs }

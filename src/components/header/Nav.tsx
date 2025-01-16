@@ -2,13 +2,11 @@
 import {useState} from 'react'
 import Link from "next/link"
 import Image from "next/image"
-import { navLists } from '@/constants'
+import { navLists, userDetailTabs } from '@/constants'
 import { Bell, SquarePen } from "lucide-react"
 import { Button } from '../ui/button'
 import profileTest from "@/assets/images/profile-test.jpg"
 
-// display these menu when user click on their profile picture
-const userDetailsTabs = ["Profile", "Rewards", "Settings"]
 
 const Nav = () => {
      const [loggedIn, setLoggedIn] = useState<boolean>(true)
@@ -41,8 +39,11 @@ const Nav = () => {
            <Bell className={`text-[18px] font-bold ${loggedIn ? "inline" : "hidden"} `} />
            <div className="flex min-h-[150px] flex-col gap-[15px]">
                <Image src={profileTest} className="w-[40px] h-[40px] rounded-[50%] cursor-pointer global_img_shadow bg-[red]" alt="profile" />
-               <aside className="w-[200px] h-[200px] bg-[#fff] p-[10px] translate-y-[130px]"> 
-                  
+               <aside className="w-[150px] h-[150px] flex flex-col gap-[10px] items-center justify-center bg-extra p-[10px] translate-y-[100px] rounded-[10px]"> 
+                   { userDetailTabs.map(menu => (
+                     <Link
+                        className="font-semibold text-[#fff] text-[18px]" href={menu.url} key={menu.id}> {menu.title} </Link>
+                   )) }
                </aside>
             </div>
            <Link href="/signin" className={`bg-main border-[2.5px] border-line h-[50px] global_shadow font-bold text-textMain min-w-[150px] ${loggedIn ? "hidden" : "inline"} hover:text-secondary hover:bg-line text-[16px] md:text-[18px] p-[10px] text-center`}> Sign In 
