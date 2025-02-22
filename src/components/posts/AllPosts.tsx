@@ -13,7 +13,7 @@ const AllPosts = () => {
         <header className="flex w-full items-end gap-[25px] justify-between">
             <aside className="flex flex-col w-[85%] gap-[10px]">
                 <h4 className="font-bold text-[18px] md:text-[25px] lg:text-[35px]"> Search posts </h4>
-                <div className="flex h-[60px] items-center w-full gap-[10px] border-[2.5px] border-line rounded-[8px]">
+                <div className="flex h-[60px] items-center w-full gap-[10px] border-[2.5px] border-line rounded-[8px] overflow-hidden">
                     <input 
                         placeholder="Search for posts" 
                         type="text" 

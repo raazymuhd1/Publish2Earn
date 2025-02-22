@@ -3,7 +3,7 @@ import { Detail } from "@/components"
 
 const PostDetails = () => {
   return (
-    <section className={``}>
+    <section className={`h-full`}>
         <Detail />
     </section>
   )

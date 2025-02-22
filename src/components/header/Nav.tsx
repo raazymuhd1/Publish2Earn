@@ -37,9 +37,9 @@ const Nav = () => {
              <h3 className="font-bold"> Write </h3>
            </Link>
            <Bell className={`text-[18px] font-bold ${loggedIn ? "inline" : "hidden"} `} />
-           <div className="flex min-h-[150px] flex-col gap-[15px]">
-               <Image src={profileTest} className="w-[40px] h-[40px] rounded-[50%] cursor-pointer global_img_shadow bg-[red]" alt="profile" />
-               <aside className="w-[150px] h-[150px] flex flex-col gap-[10px] items-center justify-center bg-extra p-[10px] translate-y-[100px] rounded-[10px]"> 
+           <div className="flex min-h-[150px] flex-col relative top-[100px]">
+               <Image src={profileTest} className="w-[40px]  h-[40px] rounded-[50%] cursor-pointer global_img_shadow bg-[red]" alt="profile" />
+               <aside className="w-[150px] h-[150px] flex flex-col gap-[10px] items-center justify-center bg-extra absolute top-0 p-[10px] rounded-[10px]"> 
                    { userDetailTabs.map(menu => (
                      <Link
                         className="font-semibold text-[#fff] text-[18px]" href={menu.url} key={menu.id}> {menu.title} </Link>
