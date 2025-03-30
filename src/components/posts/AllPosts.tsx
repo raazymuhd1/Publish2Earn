@@ -1,4 +1,5 @@
-import React from 'react'
+"use client"
+import { useState } from 'react'
 import { Search } from 'lucide-react'
 import PostTags from './PostTags'
 import Posts from "./Posts"
@@ -7,6 +8,8 @@ import { postTags } from '@/constants'
 const optItem = "p-[10px] bg-textMain text-secondary rounded-[8px] hover:bg-extra2"
 
 const AllPosts = () => {
+      const [searchTerm, setSearchTerm] = useState("");
+
   return (
     <section className="mt-[80px] w-full">
         
@@ -16,7 +19,9 @@ const AllPosts = () => {
                 <div className="flex h-[60px] items-center w-full gap-[10px] border-[2.5px] border-line rounded-[8px] overflow-hidden">
                     <input 
                         placeholder="Search for posts" 
-                        type="text" 
+                        type="text"
+                        value={searchTerm} 
+                        onChange={() => {}}
                         className='border-none outline-none w-[95%] h-full py-[8px] px-[10px] low_opacity_bg text-[#fff]'
                     />
                     <Search className="text-[16px] md:text-[20px] lg:text-[25px] placeholder:text-[#ffffff]" />
