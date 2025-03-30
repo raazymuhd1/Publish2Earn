@@ -51,6 +51,7 @@ const AllPosts = () => {
             </aside>
 
             <Posts />
+
         </article>
 
     </section>
